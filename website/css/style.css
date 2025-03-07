@@ -123,7 +123,7 @@ html {
 body{
     font-family: var(--font-family);
     overflow-x: hidden;
-    background-color: #F8F8F8
+    background-color: #F8F8F8;
 }
 a{
     text-decoration: none;
@@ -150,6 +150,8 @@ button{
     width:  300px;
     height: 80px;
     position: relative;
+    margin-top: 50px;
+    font-weight: 700;
 }
 .header__circle{
     width: 80px;
@@ -376,14 +378,25 @@ li:first-child{
 
 .portfolio{
     position: relative;
-    background-color: #F8F8F8;
-    height: 100vh;
+    background: rgb(57,57,57);
+    background: linear-gradient(179deg, rgb(30, 30, 30) 0%, rgba(26,26,26,1) 100%);
+    height: auto;
+    padding-bottom: 100px;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
 }
+.portfolio__text{
+    text-align: center;
+    width: 70%;
+    color: white;
+    font-weight: 200;
+    line-height: 170%;
+    margin: 25px 0 15px 0;
+}
+/*
 .portfolio::before{
     content: "";
     position: absolute;
@@ -391,33 +404,67 @@ li:first-child{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('whitetexture.jpg');
+    background-image: url('geo.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.1;
     z-index: -1;
 }
+    */
+.portfolio .header{
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+    background-color: white;
+}
+.portfolio .header__circle{
+    background-color: #d1d1d1aa;
+    border: 1px solid var(--color-black)
+}
 .portfolio__card{
     height: 500px;
-    width: 1100px;
-    border: 1px solid #E0E0E0;
-    background-color: var(--color-white);
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    background-color: #0E0E0E;
+    border-radius: 32px;
+    color: rgb(227, 227, 227);
+    border: 1px solid #e0e0e029;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
 }
 .portfolio__card-text{
     width: 30%;
     height: 100%;
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .portfolio__card-text h2{
-    margin: 50px 10px 20px 10px;
-    font-weight: 600;
-    color: var(--color-black);
+    margin: 50px 0 30px 60px;
+    font-weight: 400;
+    height: 10%;
+    width: 100%;
+    text-align: left;
 }
 .portfolio__card-text p{
-    margin: 20px 15px 20px 10px;
-    font-weight: 400;
-    color: var(--color-dark-grey);
+    font-weight: 200;
+    color: rgb(227, 227, 227);
+    height: 60%;
+    width: 100%;
+    margin: 0px 0 30px 60px;
+    line-height: 160%;
+}
+.portfolio__card .portfolio__see-all-cases{
+    height: 30%;
+}
+.portfolio__card .portfolio__see-all-cases button{
+    border-radius: 50px;
+    background-color: #e3e3e3;
+    color: var(--color-black);
+    transition: 0.3s;
+}
+.portfolio__card .portfolio__see-all-cases button:hover{
+    background-color: #666666;
+    color: #e3e3e3;
 }
 .portfolio__card-img{
     width: 70%;
@@ -426,16 +473,19 @@ li:first-child{
 }
 .portfolio__card-img img{
     max-width: 600px;
+    border-radius: 20px;
 }
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 70%;
     position: relative;
-    margin: auto;
+    margin: 50px auto;
 }
 .portfolio__see-all-cases{
     text-decoration: none;
-    color: var(--color-black);
-    margin: 20px 0 0 0;
+    color: rgb(227, 227, 227);
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    font-weight: 200;
 }
 .mySlides {
     display: none;
@@ -444,11 +494,11 @@ li:first-child{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(117, 117, 117, 0.5);
     color: var(--color-white);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
     border-radius: 50%;
@@ -457,7 +507,7 @@ li:first-child{
     transition: 0.3s;
 }
 .next {
-    right: -160px;
+    right: -60px;
     border-radius: 3px 3px 3px 3px;
 }
 .prev{
@@ -465,7 +515,8 @@ li:first-child{
     border-radius: 3px 3px 3px 3px;
 }
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--color-white);
 }
 .text {
     color: #f2f2f2;
@@ -478,8 +529,8 @@ li:first-child{
 }
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 8px;
+    width: 8px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -494,7 +545,7 @@ li:first-child{
 
 .pricing{
     height: 110vh;
-    width: 100vw;
+    max-width: 100vw;
     background-color: #F8F9FA;
     display: flex;
     flex-direction: column;
@@ -525,6 +576,7 @@ li:first-child{
     margin: 50px 0 80px 0;
     color: var(--color-light-grey);
     font-weight: 200;
+    font-size: 28px;
 }
 .pricing__card img{
     height: 42px;
@@ -566,6 +618,14 @@ li:first-child{
     line-height: 30px;
     font-weight: 200;
 }
+.pricing__card a button{
+    color: var(--color-white);
+    text-decoration: none;
+}
+.pricing__card a button:hover{
+    color: var(--color-black);
+    text-decoration: none;
+}
 .desktop{
     filter: invert(43%) sepia(1%) saturate(1813%) hue-rotate(203deg) brightness(85%) contrast(85%);
 }
@@ -592,7 +652,7 @@ li:first-child{
 
 .contact-us{
     height: auto;
-    width: 100vw;
+    max-width: 100vw;
     background-color: #FFFFFF;
 }
 .contact-us__content{
@@ -665,69 +725,86 @@ li:first-child{
     color: var(--color-white);
 }
 
-/* footer section */
+/* Global Footer Styling */
 footer {
-    height: auto;
-    width: 100vw;
-    background-color: var(--color-white);
+    background: #f5f5f5; /* Light grey */
+    color: #333;
+    padding: 50px 10%;
+    font-family: "Inter", sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Ensure even spacing between sections */
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 40px 20px; /* Add padding for spacing */
-    gap: 20px; /* Add gap between sections */
+    flex-wrap: wrap;
+    text-align: left;
 }
 
-footer div {
-    padding: 20px;
+/* Footer Sections */
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
 }
 
-.footer__description,
-.footer__links,
-.footer__sitemap,
-.footer__contact {
-    width: 25%;
+/* Logo Styling */
+.footer-logo {
+    max-width: 120px;
+    margin-bottom: 15px;
 }
 
-.footer__description h3,
-.footer__links h3,
-.footer__sitemap h3,
-.footer__contact h3 {
-    font-size: var(--font-size-h3);
-    font-weight: var(--font-semibold);
+/* Footer Text */
+.footer-left p, .footer-right p {
+    font-size: 14px;
+    color: #555;
+    max-width: 300px;
+}
+
+/* Sitemap & Links (Fixing Spacing) */
+.footer-center h3, .footer-right h3 {
+    font-size: 16px;
     margin-bottom: 10px;
-    text-align: center; /* Center the titles */
+    color: #000;
 }
 
-.footer__description p,
-.footer__contact p {
-    font-size: var(--font-size-p);
-    font-weight: var(--font-normal);
-    color: var(--color-dark-grey);
-    margin-bottom: 10px;
+.footer-links {
+    display: flex;
+    gap: 20px;  /* Space between links */
+    flex-wrap: wrap;
 }
 
-.footer__links ul,
-.footer__sitemap ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; /* Ensure no default margin */
-    text-align: left; /* Align list items to the left */
-}
-
-.footer__links li,
-.footer__sitemap li {
-    margin-bottom: 10px;
-}
-
-.footer__links a,
-.footer__sitemap a {
-    color: var(--color-dark-grey);
+.footer-links a {
     text-decoration: none;
-    transition: color 0.3s;
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
-.footer__links a:hover,
-.footer__sitemap a:hover {
-    color: var(--color-primary);
+.footer-links a:hover {
+    color: #0073e6;
+}
+
+/* Contact Info */
+.footer-right p a {
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-right p a:hover {
+    color: #0073e6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
 }

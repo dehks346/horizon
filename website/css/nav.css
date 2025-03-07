@@ -1,0 +1,41 @@
+/* nav styles */
+
+nav{
+    height: 100px;
+    width: 100vw;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    background-color: var(--color-black);
+}
+.nav__logo-container{
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+    width: 200px
+}
+.nav__logo{
+    height: 35px;
+    width: 35px;
+}
+nav ul{
+    width: 100%;
+    margin-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: var(--color-white);
+    transition: 0.3s
+}
+nav ul li a:hover{
+    color: var(--color-secondary);
+}
+li{
+    float: right;
+    margin-left: 40px;
+}
+li:first-child{
+    float: left;
+}

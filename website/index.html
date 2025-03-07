@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon - Build the future</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/responsive.css">
-    <link rel="icon" type="image/x-icon" href="static/b_logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/b_Logo.png">
 </head>
 <body>
     <nav>
         <ul>
             <li>
                 <div class="nav__logo-container flex-center">
-                    <a href="index.html"><img src="/website/static/W_Logo.png" alt="" class="nav__logo"></a>
+                    <a href="/website/index.html"><img src="/website/assets/images/W_Logo.png" alt="" class="nav__logo"></a>
                     <h3>Horizon</h3>
                 </div>
             </li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li><a href="index.html#services">Services</a></li>
-            <li><a href="index.html#why-us">Why us</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="index.html#home">Home</a></li>
+            <li><a href="/website/pages/contact.html">Contact</a></li>
+            <li><a href="/website/pages/portfolio.html">Portfolio</a></li>
+            <li><a href="/website/index.html#services">Services</a></li>
+            <li><a href="/website/index.html#why-us">Why us</a></li>
+            <li><a href="/website/pages/about.html">About us</a></li>
+            <li><a href="/website/index.html#home">Home</a></li>
         </ul>
     </nav>
     <section class="home" id="home">
@@ -35,7 +36,7 @@
             </h1>
         </section>
         <section class="flex-center">
-            <img src="/website/static/earth.jpg" class="home__earth" alt="">
+            <img src="assets/images/earth.jpg" class="home__earth" alt="">
         </section>
     </section>
     <section class="why-us flex-center" id="why-us">
@@ -49,7 +50,7 @@
         </header>
         <section class="why-us__content">
             <div class="why-us__img-container">
-                <img src="static/gif.gif" alt="">
+                <img src="assets/images/gif.gif" alt="">
             </div>
             <div class="why-us__text-container">
                 <div>
@@ -59,7 +60,7 @@
                 <div class="why-us__card-container">
                     <div class="why-us__card">
                         <div class="why-us__card-img header--centered">
-                            <img src="static/star.svg" alt="">
+                            <img src="assets/icons/star.svg" alt="">
                         </div>
                         <div class="why-us__card-text">
                             <h5 class="font-size-h4 font-bold">Excellence, redefined</h5>
@@ -68,7 +69,7 @@
                     </div>
                     <div class="why-us__card">
                         <div class="why-us__card-img header--centered">
-                            <img src="static/rocket.svg" alt="">
+                            <img src="assets/icons/rocket.svg" alt="">
                         </div>
                         <div class="why-us__card-text">
                             <h5 class="font-size-h4 font-bold">Future-proof by design</h5>
@@ -77,7 +78,7 @@
                     </div>
                     <div class="why-us__card">
                         <div class="why-us__card-img header--centered">
-                            <img src="static/cog.svg" alt="">
+                            <img src="assets/icons/cog.svg" alt="">
                         </div>
                         <div class="why-us__card-text">
                             <h5 class="font-size-h4 font-bold">Precision & Performance</h5>
@@ -86,7 +87,7 @@
                     </div>
                     <div class="why-us__card">
                         <div class="why-us__card-img header--centered">
-                            <img src="static/tune.svg" alt="">
+                            <img src="assets/icons/tune.svg" alt="">
                         </div>
                         <div class="why-us__card-text">
                             <h5 class="font-size-h4 font-bold">Tailored to perfection</h5>
@@ -95,7 +96,7 @@
                     </div>
                     <div class="why-us__card">
                         <div class="why-us__card-img header--centered">
-                            <img src="static/bolt.svg" alt="">
+                            <img src="assets/icons/bolt.svg" alt="">
                         </div>
                         <div class="why-us__card-text">
                             <h5 class="font-size-h4 font-bold">Speed without compromise</h5>
@@ -104,7 +105,7 @@
                     </div>
                     <div class="why-us__card">
                         <div class="why-us__card-img header--centered">
-                            <img src="static/palette.svg" alt="">
+                            <img src="assets/icons/palette.svg" alt="">
                         </div>
                         <div class="why-us__card-text">
                             <h5 class="font-size-h4 font-bold">effortless sophistication</h5>
@@ -124,34 +125,39 @@
                 02
             </div>
         </header>
+        <div class="portfolio__text">
+            <p>Our portfolio is a testament to precision, innovation, and seamless digital craftsmanship. Each project represents a unique challenge—solved through strategic design, advanced development, and a relentless pursuit of excellence. 
+        </div>
             <div class="slideshow-container">
                 <!-- Full-width images with number and caption text -->
-                <h6><a href="portfolio.html" class="portfolio__see-all-cases">See all cases →</a></h6>
+                <figure class="portfolio__card mySlides fade">
+                    <figcaption class="portfolio__card-text">
+                        <h2 class="font-size-h2">Horizon</h2>
+                        <p class="text--light-grey font-size-p font-light">project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info </p>
+                        <a href="pages/portfolio.html" class="portfolio__see-all-cases"><button>See all cases </button></a>
+                    </figcaption>
+                    <div class="portfolio__card-img flex-center">
+                        <img src="assets/images/land.jpeg" alt="">
+                    </div>
+                </figure>
                 <figure class="portfolio__card mySlides fade">
                     <figcaption class="portfolio__card-text">
                         <h2 class="font-size-h2">Project 1</h2>
                         <p class="text--light-grey font-size-p font-light">project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info </p>
+                        <a href="pages/portfolio.html" class="portfolio__see-all-cases"><button>See all cases </button></a>
                     </figcaption>
                     <div class="portfolio__card-img flex-center">
-                        <img src="static/land.jpeg" alt="">
+                        <img src="assets/images/landingpage.png" alt="">
                     </div>
                 </figure>
                 <figure class="portfolio__card mySlides fade">
                     <figcaption class="portfolio__card-text">
-                        <h2 class="font-size-h2">Project 2</h2>
+                        <h2 class="font-size-h2">Project 1</h2>
                         <p class="text--light-grey font-size-p font-light">project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info </p>
+                        <a href="pages/portfolio.html" class="portfolio__see-all-cases"><button>See all cases </button></a>
                     </figcaption>
                     <div class="portfolio__card-img flex-center">
-                        <img src="static/landingpage.png" alt="">
-                    </div>
-                </figure>
-                <figure class="portfolio__card mySlides fade">
-                    <figcaption class="portfolio__card-text">
-                        <h2 class="font-size-h2">Project 3</h2>
-                        <p class="text--light-grey font-size-p font-light">project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info project info </p>
-                    </figcaption>
-                    <div class="portfolio__card-img flex-center">
-                        <img src="home2.png" alt="">
+                        <img src="assets/images/landingpage.png" alt="">
                     </div>
                 </figure>
             <a class="prev flex-center" onclick="plusSlides(-1)">&#10094;</a>
@@ -164,7 +170,7 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="services">
         <header class="header header--centered">
             <div class="header__text header--centered">
                 Pricing
@@ -173,10 +179,10 @@
                 03
             </div>
         </header>
-        <div class="pricing__text-info"><h5 class="font-size-h3">Premium, transparent pricing for high-end websites.</h5></div>
+        <div class="pricing__text-info"><h5>Premium, transparent pricing for high-end websites.</h5></div>
         <section class="pricing__card-container">
             <div class="pricing__card">
-                    <img src="static/desktop.svg" alt="" class="desktop">
+                    <img src="assets/icons/desktop.svg" alt="" class="desktop">
                     <h3 class="font-size-h2 font-bold">Core</h3>
                     <p class="font-size-p">A streamlined, high-performance single-page experience</p>
                     <div class="pricing__price font-size-h2"><h2>£75</h2><p class="font-size-p font-light">GBP/Billed as a one time payment</p></div>
@@ -187,11 +193,11 @@
                         <span class="font-size-p">responsive</span><br>
                         <span class="font-size-p">responsive</span><br>
                     </div>
-                <button>Get Started</button>
+                    <a href="#contact"><button>Get Started</button></a>
             </div>
             <div class="pricing__card">
-                <img src="static/stacked.svg" alt="" class="stacked">
-                <h3 class="font-size-h2 font-bold">luxe</h3>
+                <img src="assets/icons/stacked.svg" alt="" class="stacked">
+                <h3 class="font-size-h2 font-bold">Luxe</h3>
                 <p class="font-size-p">A refined, multi-page digital presence, crafted to impress.</p>
                 <div class="pricing__price font-size-h2"><h2>£200</h2><p class="font-size-p">GBP/Billed as a one time payment</p></div>
                 <div class="pricing__features">
@@ -201,10 +207,10 @@
                     <span class="font-size-p">responsive</span><br>
                     <span class="font-size-p">responsive</span><br>
                 </div>
-                <button>Get Started</button>
+                <a href="#contact"><button>Get Started</button></a>
             </div>
             <div class="pricing__card">
-                <img src="static/tools.svg" alt="" class="tools">
+                <img src="assets/icons/tools.svg" alt="" class="tools">
                 <h3 class="font-size-h2 font-bold">Enterprise</h3>
                 <p class="font-size-p">The ultimate package - hosting, management, and seamless scalability.</p>
                 <div class="pricing__price"><h2 class="font-size-h2">Custom <span class="pricing__quote-boldness">quote</span></h2></div>
@@ -215,11 +221,11 @@
                     <span class="font-size-p">responsive</span><br>
                     <span class="font-size-p">responsive</span><br>
                 </div>
-                <button>Get Started</button>
+                <a href="#contact"><button>Get Started</button></a>
             </div>
         </section>
     </section>
-    <section class="contact-us ">
+    <section class="contact-us" id="contact">
         <div class="contact--header flex-center">
             <header class="header header--centered contact-us__header">
                 <div class="header__text header--centered">
@@ -232,12 +238,12 @@
         </div>
         <section class="contact-us__content flex-center">
             <div class="contact-us__form-container">
-                <form action="" class="contact-us__form flex-center">
-                    <input type="text" placeholder="Name" required>
-                    <input type="text" placeholder="Company">
-                    <input type="email" placeholder="Email" required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Project details" required></textarea>
-                    <button>Submit</button>
+                <form action="https://formspree.io/f/xvgkpbkq" method="POST" class="contact-us__form flex-center">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Company" name="company">
+                    <input type="email" placeholder="Email" name="email" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Project details" required></textarea>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
             <div class="contact-us__text">
@@ -245,41 +251,34 @@
                 <h1 class="contact-us__huge-text contact-us__text-stack">READY TO <span>INNOVATE?</span></h1><br><br>
                 <p class="font-size-h4 text--dark-grey contact-us__text-stack">Let's build something incredible together. Fill out the form and we'll be in touch.</p> <br><br>
                 <p class="font-size-h4 text--dark-grey contact-us__text-stack">Prefer direct contact? reach us at <br> <span class="font-bold">horizon@horizon.com</span></p>
-                <img src="static/semi.png" alt="">
+                <img src="assets/images/semi.png" alt="">
             </div>
         </section>
     </section>
-    <footer>
-        <div class="footer__description">
-            <h3>About Us</h3>
-            <p>We are a leading web design company, creating stunning websites that help businesses grow.</p>
-        </div>
-        <div class="footer__links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#home">Privacy Policy</a></li>
-                <li><a href="#portfolio">© Horizon 2025</a></li>
-                <li><a href="#services">Careers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer__sitemap">
-            <h3>Sitemap</h3>
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#blog">About us</a></li>
-                <li><a href="#careers">Contact us</a></li>
-                <li><a href="#privacy">Careers page</a></li>
-                <li><a href="">not sure yet</a></li>
-            </ul>
-        </div>
-        <div class="footer__contact">
-            <h3>Contact Us</h3>
-            <p>Email: info@horizon.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p>Address: 123 Horizon St, Web City, WC 12345</p>
-        </div>
-    </footer>
-    <script src="static/script.js"></script>
+        <footer>
+            <section class="footer-container">
+                
+                <article class="footer-left">
+                    <img src="assets/images/b_logo_text.png" alt="Horizon Logo" class="footer-logo">
+                    <p>High-performance, results-driven web development.</p>
+                </article>
+                <article class="footer-center">
+                    <h3>Sitemap</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="pages/about.html">About Us</a>
+                        <a href="pages/portfolio.html">Portfolio</a>
+                        <a href="pages/contact.html">Contact</a>
+                        <a href="pages/privacy.html">Privacy Policy</a>
+                    </div>
+                </article>
+                <article class="footer-right">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:info@horizon.com">info@horizon.com</a></p>
+                </article>
+    
+            </section>
+        </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
