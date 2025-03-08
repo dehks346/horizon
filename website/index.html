@@ -6,9 +6,33 @@
     <title>Horizon - Build the future</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="icon" type="image/x-icon" href="assets/images/b_Logo.png">
 </head>
 <body>
+    <div class="overlay" id="popupOverlay"></div>
+    <div class="popup" id="popupBox">
+        <h2>Grand Opening Deal – 50% Off All Packages!</h2>
+        <p>Celebrate our launch with an exclusive 50% off all packages. Offer ends soon!</p>
+        <button onclick="closePopup()">Claim Your Offer</button>
+    </div>
+    <div id="promoCarousel" class="promo-carousel">
+        <div class="carousel-content">
+            <span class="promo-text">50% Off All Packages - Limited Time Only!</span>
+            <span class="promo-text">Exclusive Offer for Our Grand Opening!</span>
+            <span class="promo-text">Don’t Miss Out – Offer Ends Soon!</span>
+            
+            <!-- Duplicate the content for seamless scrolling -->
+            <span class="promo-text">50% Off All Packages - Limited Time Only!</span>
+            <span class="promo-text">Exclusive Offer for Our Grand Opening!</span>
+            <span class="promo-text">Don’t Miss Out – Offer Ends Soon!</span>
+        </div>
+    </div>
+    
+    
+    
+    
     <nav>
         <ul>
             <li>
@@ -179,49 +203,62 @@
                 03
             </div>
         </header>
-        <div class="pricing__text-info"><h5>Premium, transparent pricing for high-end websites.</h5></div>
+        <div class="pricing__text-info">
+            <h5>Premium, transparent pricing for high-end websites. <span class="pricing__discount-text">Limited Time: 50% Off!</span></h5>
+        </div>
         <section class="pricing__card-container">
             <div class="pricing__card">
-                    <img src="assets/icons/desktop.svg" alt="" class="desktop">
-                    <h3 class="font-size-h2 font-bold">Core</h3>
-                    <p class="font-size-p">A streamlined, high-performance single-page experience</p>
-                    <div class="pricing__price font-size-h2"><h2>£75</h2><p class="font-size-p font-light">GBP/Billed as a one time payment</p></div>
-                    <div class="pricing__features">
-                        <h5 class="font-size-h5">Core plan includes: </h5>
-                        <span class="font-size-p">responsive</span><br>
-                        <span class="font-size-p">responsive</span><br>
-                        <span class="font-size-p">responsive</span><br>
-                        <span class="font-size-p">responsive</span><br>
-                    </div>
-                    <a href="#contact"><button>Get Started</button></a>
+                <img src="assets/icons/desktop.svg" alt="" class="desktop">
+                <div class="pricing__badge">50% OFF</div> <!-- Discount badge -->
+                <h3 class="font-size-h2 font-bold">Core</h3>
+                <p class="font-size-p">A streamlined, high-performance single-page experience</p>
+                <div class="pricing__price font-size-h2">
+                    <h2><span class="pricing__old-price">£300</span> £150</h2> <!-- Strikethrough old price -->
+                    <p class="font-size-p font-light">GBP/Billed as a one-time payment</p>
+                </div>
+                <div class="pricing__features">
+                    <h5 class="font-size-h5">Core plan includes:</h5>
+                    <span class="font-size-p">Template-Based</span><br>
+                    <span class="font-size-p">Mobile-Friendly</span><br>
+                    <span class="font-size-p">Fast Turnaround</span><br>
+                    <span class="font-size-p">Contact Form</span><br>
+                </div>
+                <a href="#contact"><button class="pricing__cta">Claim 50% Off Now</button></a>
             </div>
             <div class="pricing__card">
                 <img src="assets/icons/stacked.svg" alt="" class="stacked">
+                <div class="pricing__badge">50% OFF</div>
                 <h3 class="font-size-h2 font-bold">Luxe</h3>
                 <p class="font-size-p">A refined, multi-page digital presence, crafted to impress.</p>
-                <div class="pricing__price font-size-h2"><h2>£200</h2><p class="font-size-p">GBP/Billed as a one time payment</p></div>
-                <div class="pricing__features">
-                    <h5 class="font-size-h5">Luxe plan includes everything in core and: </h5>
-                    <span class="font-size-p">responsive</span><br>
-                    <span class="font-size-p">responsive</span><br>
-                    <span class="font-size-p">responsive</span><br>
-                    <span class="font-size-p">responsive</span><br>
+                <div class="pricing__price font-size-h2">
+                    <h2><span class="pricing__old-price">£600</span> £300</h2>
+                    <p class="font-size-p">GBP/Billed as a one-time payment</p>
                 </div>
-                <a href="#contact"><button>Get Started</button></a>
+                <div class="pricing__features">
+                    <h5 class="font-size-h5">Luxe plan includes:</h5>
+                    <span class="font-size-p">Custom Design</span><br>
+                    <span class="font-size-p">Mobile Optimised</span><br>
+                    <span class="font-size-p">Interactive Elements</span><br>
+                    <span class="font-size-p">Animations</span><br>
+                </div>
+                <a href="#contact"><button class="pricing__cta">Claim 50% Off Now</button></a>
             </div>
             <div class="pricing__card">
                 <img src="assets/icons/tools.svg" alt="" class="tools">
+                <div class="pricing__badge">50% OFF</div>
                 <h3 class="font-size-h2 font-bold">Enterprise</h3>
                 <p class="font-size-p">The ultimate package - hosting, management, and seamless scalability.</p>
-                <div class="pricing__price"><h2 class="font-size-h2">Custom <span class="pricing__quote-boldness">quote</span></h2></div>
-                <div class="pricing__features">
-                    <h5 class="font-size-h5">Executive plan includes everything in luxe and: </h5>
-                    <span class="font-size-p">responsive</span><br>
-                    <span class="font-size-p">responsive</span><br>
-                    <span class="font-size-p">responsive</span><br>
-                    <span class="font-size-p">responsive</span><br>
+                <div class="pricing__price">
+                    <h2 class="font-size-h2">Custom <span class="pricing__quote-boldness">Pricing</span></h2>
                 </div>
-                <a href="#contact"><button>Get Started</button></a>
+                <div class="pricing__features">
+                    <h5 class="font-size-h5">Executive plan includes:</h5>
+                    <span class="font-size-p">Fully Custom Design</span><br>
+                    <span class="font-size-p">Advanced Animation</span><br>
+                    <span class="font-size-p">Hosting included</span><br>
+                    <span class="font-size-p">SEO optimised</span><br>
+                </div>
+                <a href="#contact"><button class="pricing__cta">Claim 50% Off Now</button></a>
             </div>
         </section>
     </section>
@@ -279,6 +316,8 @@
     
             </section>
         </footer>
-    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

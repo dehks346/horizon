@@ -808,3 +808,43 @@ footer {
         justify-content: center;
     }
 }
+
+
+
+
+
+
+
+.pricing__card {
+    position: relative; /* Needed for badge positioning */
+}
+.pricing__discount-text {
+    color: #B22222; /* A deep red that feels premium */
+    font-weight: 500;
+}
+.pricing__badge {
+    background-color: #B22222; /* Rich red */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.pricing__old-price {
+    text-decoration: line-through;
+    color: #952525;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.pricing__cta {
+    background-color: #0E7C55; /* Deep green for a luxury feel */
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.pricing__cta:hover {
+    background-color: #055A3B;
+}
